@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logobtpns" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="50dp">
+
+            <EditText
+                android:id="@+id/noktpET"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/grey"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="left"
+                android:hint="@string/no_ktp"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey" />
+
+            <EditText
+                android:id="@+id/fullnameET"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/noktpET"
+                android:backgroundTint="@color/grey"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="left"
+                android:hint="@string/fullname"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey" />
+
+            <EditText
+                android:id="@+id/addressET"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/fullnameET"
+                android:backgroundTint="@color/grey"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="left"
+                android:hint="@string/address"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey" />
+
+            <EditText
+                android:id="@+id/nohpET"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/addressET"
+                android:backgroundTint="@color/grey"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="left"
+                android:hint="@string/no_hp"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey" />
+
+            <EditText
+                android:id="@+id/emailET"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/nohpET"
+                android:backgroundTint="@color/grey"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="left"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey" />
+
+            <EditText
+                android:id="@+id/registusernameET"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/emailET"
+                android:backgroundTint="@color/grey"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="left"
+                android:hint="@string/username"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey" />
+
+            <EditText
+                android:id="@+id/registpasswordET"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/registusernameET"
+                android:backgroundTint="@color/grey"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="left"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey" />
+
+            <Button
+                android:id="@+id/registregisterBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registpasswordET"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="@color/orange"
+                android:hint="@string/register"
+                android:textColorHint="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

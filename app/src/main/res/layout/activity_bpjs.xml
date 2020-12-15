@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".BpjsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:src="@drawable/logobtpns"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:id="@+id/nobpjsTV"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:text="@string/input_bpjs"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/nobpjsET"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/no_bpjs"
+                android:backgroundTint="@color/grey"
+                android:layout_below="@+id/nobpjsTV"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="left"/>
+            <TextView
+                android:id="@+id/totalbpjsTV"
+                android:layout_width="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/nobpjsET"
+                android:text="@string/hint_totbpjs"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/totalbpjsET"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:editable="false"
+                android:hint="@string/tot_bpjs"
+                android:backgroundTint="@color/grey"
+                android:layout_below="@+id/totalbpjsTV"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="left" />
+
+            <Button
+                android:id="@+id/paybpjsBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/orange"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/totalbpjsET"
+                android:text="@string/pay"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:src="@drawable/tepat"
+                android:layout_below="@+id/paybpjsBT"
+                android:scaleType="fitEnd"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="45dp"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

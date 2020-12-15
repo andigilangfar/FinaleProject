@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Finale Project</string>
+    <!--    LOGIN-->
+    <string name="login">LOGIN</string>
+    <string name="register_here">REGISTER HERE</string>
+    <string name="register">REGISTER</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="regist_hint">Dont have an account yet ?</string>
+    <string name="regist_hint2">Register Now</string>
+    <!--    REGISTER-->
+    <string name="no_ktp">No. KTP</string>
+    <string name="fullname">Fullname</string>
+    <string name="address">Address</string>
+    <string name="no_hp">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <!--    HOME-->
+    <string name="tot_saldo">TOTAL SALDO</string>
+    <string name="pay_bpjs">PAYMENT BPJS</string>
+    <string name="mutasi_rekening">MUTASI REKENING</string>
+    <string name="logout">LOGOUT</string>
+    <!--    BPJS-->
+    <string name="no_bpjs">No. BPJS</string>
+    <string name="rp">Rp.</string>
+    <string name="hint_totbpjs">Jumlah Yang Harus Dibayarkan</string>
+    <string name="tot_bpjs">Total</string>
+    <string name="input_bpjs">Masukkan No. BPJS Anda</string>
+    <string name="pay">Bayar</string>
+
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:src="@drawable/logobtpns"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
+
+            <EditText
+                android:id="@+id/loginusernameET"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="@string/hint_username"
+                android:backgroundTint="@color/grey"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="left"/>
+            <EditText
+                android:id="@+id/loginpasswordET"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/loginusernameET"
+                android:hint="@string/hint_password"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/grey"
+                android:textColorHint="@color/grey"
+                android:inputType="textPassword"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginTop="20dp"
+                android:gravity="left"/>
+            <Button
+                android:id="@+id/loginBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginpasswordET"
+                android:backgroundTint="@color/orange"
+                android:hint="@string/login"
+                android:textColorHint="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/registhintTV"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginBT"
+                android:text="@string/regist_hint"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/registhintTV2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registhintTV"
+                android:text="@string/regist_hint2"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/registerhereBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registhintTV2"
+                android:backgroundTint="@color/orange"
+                android:hint="@string/register_here"
+                android:textColorHint="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:src="@drawable/tepat"
+                android:layout_below="@+id/registerhereBT"
+                android:scaleType="fitEnd"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="20dp"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

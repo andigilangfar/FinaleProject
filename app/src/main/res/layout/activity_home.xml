@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:src="@drawable/logobtpns"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/totalsaldohintTV"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:text="@string/tot_saldo"
+                android:gravity="left"
+                android:textSize="20sp"
+                android:textColor="@color/grey"
+                android:fontFamily="sans-serif-condensed-medium"/>
+            <TextView
+                android:id="@+id/totalsaldoTV"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/rp"
+                android:gravity="center"
+                android:layout_below="@+id/totalsaldohintTV"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"/>
+            <Button
+                android:id="@+id/bpjspaymentBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/orange"
+                android:layout_below="@+id/totalsaldoTV"
+                android:layout_marginTop="20dp"
+                android:text="@string/pay_bpjs"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/mutasirekeningBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/orange"
+                android:layout_below="@+id/bpjspaymentBT"
+                android:text="@string/mutasi_rekening"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/logoutBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/orange"
+                android:layout_below="@+id/mutasirekeningBT"
+                android:text="@string/logout"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:src="@drawable/tepat"
+                android:layout_below="@+id/logoutBT"
+                android:scaleType="fitEnd"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="83dp"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
