@@ -28,5 +28,8 @@
     <string name="tot_bpjs">Total</string>
     <string name="input_bpjs">Masukkan No. BPJS Anda</string>
     <string name="pay">Bayar</string>
+    <string name="mutasi">Mutasi Rekening</string>
+    <string name="pilih_tanggal">Pilih Tanggal</string>
+    <string name="headername">Nama</string>
 
 </resources>

@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class HomeActivity extends AppCompatActivity {
-    private Button bpjspaymentBT;
+    private Button bpjspaymentBT, mutasirekeningBT;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +20,7 @@ public class HomeActivity extends AppCompatActivity {
 
     void findViewById(){
         bpjspaymentBT = findViewById(R.id.bpjspaymentBT);
+        mutasirekeningBT = findViewById(R.id. mutasirekeningBT);
 
     }
 
@@ -28,6 +29,13 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this, BpjsActivity.class);
+                startActivity(intent);
+            }
+        });
+        mutasirekeningBT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, MutasiActivity.class);
                 startActivity(intent);
             }
         });
