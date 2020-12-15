@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/logojpg"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectFinaleFix">
-        <activity android:name=".BpjsActivity"></activity>
+        <activity android:name=".MutasiActivity"></activity>
+        <activity android:name=".BpjsActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".HomeActivity" />
