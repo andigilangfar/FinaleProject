@@ -15,11 +15,12 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         findViewById();
         onCLickGroup();
+
     }
 
     void findViewById(){
         bpjspaymentBT = findViewById(R.id.bpjspaymentBT);
-//        registerBT = findViewById(R.id.registerBT);
+
     }
 
     void onCLickGroup() {
@@ -28,21 +29,8 @@ public class HomeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this, BpjsActivity.class);
                 startActivity(intent);
-                finish();
-//                public void run() {
-////                    Intent homeIntent = new Intent(MainActivity.this, LoginActivity.class);
-////                    startActivity(homeIntent);
-////                    finish();
             }
         });
-//        loginBT.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
-//                startActivity(intent);
-//                finish();
-//            }
-//        });
-//    }
+    }
 
-    }}
+}

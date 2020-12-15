@@ -35,9 +35,9 @@
                 android:layout_height="30dp"
                 android:text="@string/tot_saldo"
                 android:gravity="left"
-                android:textSize="20sp"
-                android:textColor="@color/grey"
-                android:fontFamily="sans-serif-condensed-medium"/>
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-light"/>
             <TextView
                 android:id="@+id/totalsaldoTV"
                 android:layout_width="match_parent"
