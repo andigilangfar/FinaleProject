@@ -5,86 +5,142 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".HomeActivity">
+    tools:context=".activity.HomeActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:orientation="horizontal"
+            android:background="@color/orangeheader"
+            android:layout_height="70dp">
+
 
             <ImageView
-                android:layout_marginTop="20dp"
                 android:layout_width="150dp"
-                android:layout_height="80dp"
-                android:src="@drawable/logobtpns"/>
+                android:layout_height="70dp"
+                android:src="@drawable/go2"/>
+            <ImageButton
+                android:id="@+id/logoutBT"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:background="@color/orangeheader"
+                android:layout_marginLeft="200dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/exit"
+                android:text="@string/logout"
+                android:textColor="@color/white"/>
+
         </LinearLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="600dp"
-            android:layout_marginTop="150dp"
+            android:layout_marginTop="70dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp">
 
             <TextView
-                android:id="@+id/totalsaldohintTV"
-                android:layout_width="200dp"
-                android:layout_height="30dp"
-                android:text="@string/tot_saldo"
-                android:gravity="left"
+                android:id="@+id/hiTV"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="@string/hello"
                 android:textSize="15sp"
-                android:textColor="@color/black"
-                android:fontFamily="sans-serif-condensed-light"/>
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/orange"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_below="@+id/hiTV"
+                android:id="@+id/nameTV"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/headername"
+                android:gravity="right"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/orange" />
+
+            <ImageView
+                android:id="@+id/imageheaderIV"
+                android:layout_centerInParent="true"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/nameTV"
+                android:background="@drawable/croods"/>
+
             <TextView
                 android:id="@+id/totalsaldoTV"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_centerHorizontal="true"
-                android:text="@string/rp"
-                android:gravity="center"
-                android:layout_below="@+id/totalsaldohintTV"
-                android:textSize="30sp"
-                android:textColor="@color/black"
+                android:layout_height="20dp"
+                android:layout_below="@id/imageheaderIV"
+                android:text="@string/tot_saldo"
+                android:textColor="@color/orange"
+                android:gravity="left"
                 android:fontFamily="sans-serif-condensed-medium"/>
-            <Button
-                android:id="@+id/bpjspaymentBT"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/orange"
-                android:layout_below="@+id/totalsaldoTV"
-                android:layout_marginTop="20dp"
-                android:text="@string/pay_bpjs"
-                android:textColor="@color/white"/>
-            <Button
-                android:id="@+id/mutasirekeningBT"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/orange"
-                android:layout_below="@+id/bpjspaymentBT"
-                android:text="@string/mutasi_rekening"
-                android:layout_marginTop="20dp"
-                android:textColor="@color/white"/>
-            <Button
-                android:id="@+id/logoutBT"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/orange"
-                android:layout_below="@+id/mutasirekeningBT"
-                android:text="@string/logout"
-                android:layout_marginTop="20dp"
-                android:textColor="@color/white"/>
 
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:src="@drawable/tepat"
-                android:layout_below="@+id/logoutBT"
-                android:scaleType="fitEnd"
-                android:layout_marginLeft="250dp"
-                android:layout_marginTop="83dp"
-                />
+            <TextView
+                android:id="@+id/totalsaldorpTV"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/totalsaldoTV"
+                android:text="@string/rp"
+                android:textColor="@color/orange"
+                android:gravity="center"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="30sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="380dp"
+                android:background="@drawable/border">
+
+                <ImageButton
+                    android:id="@+id/bpjspaymentBT"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/receipt"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/bpjspaymentBT"
+                    android:layout_marginLeft="50dp"
+                    android:text="@string/pay_bpjs"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:textColor="@color/orange"
+                    android:fontFamily="sans-serif-condensed-medium"/>
+
+                <ImageButton
+                    android:id="@+id/mutasirekeningBT"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="210dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/transaction"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/mutasirekeningBT"
+                    android:layout_marginLeft="210dp"
+                    android:layout_marginRight="50dp"
+                    android:text="@string/mutasi_rekening"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:textColor="@color/orange"
+                    android:fontFamily="sans-serif-condensed-medium"/>
+
+
+            </RelativeLayout>
+
+
 
         </RelativeLayout>
     </RelativeLayout>

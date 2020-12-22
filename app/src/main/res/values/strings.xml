@@ -1,24 +1,30 @@
 <resources>
-    <string name="app_name">Finale Project</string>
+    <string name="app_name">M-Banking</string>
     <!--    LOGIN-->
-    <string name="login">LOGIN</string>
-    <string name="register_here">REGISTER HERE</string>
-    <string name="register">REGISTER</string>
+    <string name="login">MASUK</string>
+    <string name="register_here">DAFTAR DISINI</string>
+    <string name="register">DAFTAR</string>
     <string name="hint_username">Username</string>
     <string name="hint_password">Password</string>
-    <string name="regist_hint">Dont have an account yet ?</string>
-    <string name="regist_hint2">Register Now</string>
+    <string name="regist_hint">Belum Memiliki Akun ?</string>
+    <string name="regist_hint2">Daftar Sekarang</string>
+    <string name="user_name">Nama User</string>
+
     <!--    REGISTER-->
     <string name="no_ktp">No. KTP</string>
-    <string name="fullname">Fullname</string>
-    <string name="address">Address</string>
-    <string name="no_hp">Phone Number</string>
+    <string name="fullname">Nama Lengkap</string>
+    <string name="address">Alamat</string>
+    <string name="no_hp">No. Telp</string>
     <string name="email">Email</string>
     <string name="username">Username</string>
-    <string name="password">Password</string>
+    <string name="pin">Pin</string>
+    <string name="birthdate">Tanggal Lahir</string>
+    <string name="norek">No. Rekening</string>
+    <string name="jeniskelamin">Jenis Kelamin (L/P)</string>
     <!--    HOME-->
+    <string name="hello">Hello,</string>
     <string name="tot_saldo">TOTAL SALDO</string>
-    <string name="pay_bpjs">PAYMENT BPJS</string>
+    <string name="pay_bpjs">PEMBAYARAN BPJS</string>
     <string name="mutasi_rekening">MUTASI REKENING</string>
     <string name="logout">LOGOUT</string>
     <!--    BPJS-->
@@ -31,5 +37,8 @@
     <string name="mutasi">Mutasi Rekening</string>
     <string name="pilih_tanggal">Pilih Tanggal</string>
     <string name="headername">Nama</string>
+    <string name="bpjsuser">Atas Nama</string>
+    <string name="cektagihan">Cek Tagihan</string>
+    <string name="notesbpjs">Jumlah Total Yang Harus Anda Bayarkan dan Atas Nama Kartu BPJS Akan Otomatis Terisi Bila Anda Mengisi No.BPJS dengan benar Dan Menekan Tombol Cek Tagihan </string>
 
 </resources>

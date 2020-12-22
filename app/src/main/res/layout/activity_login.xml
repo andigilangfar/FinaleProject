@@ -5,34 +5,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".LoginActivity">
+    tools:context=".activity.LoginActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:orientation="horizontal"
+            android:background="@color/orangeheader"
+            android:layout_height="70dp">
+
 
             <ImageView
-                android:layout_marginTop="20dp"
                 android:layout_width="150dp"
-                android:layout_height="80dp"
-                android:src="@drawable/logobtpns"/>
+                android:layout_height="70dp"
+                android:src="@drawable/go2"/>
+
 
         </LinearLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="600dp"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="100dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:src="@drawable/tepat"
+                android:layout_toRightOf="@+id/helloIV"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                />
 
+            <ImageView
+                android:id="@+id/helloIV"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:background="@drawable/hello"
+                  />
             <EditText
                 android:id="@+id/loginusernameET"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/helloIV"
                 android:hint="@string/hint_username"
                 android:backgroundTint="@color/grey"
                 android:inputType="text"
@@ -49,10 +68,12 @@
                 android:textColor="@color/black"
                 android:backgroundTint="@color/grey"
                 android:textColorHint="@color/grey"
-                android:inputType="textPassword"
+                android:inputType="numberPassword"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:layout_marginTop="20dp"
                 android:gravity="left"/>
+
+
             <Button
                 android:id="@+id/loginBT"
                 android:layout_width="match_parent"
@@ -71,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/loginBT"
                 android:text="@string/regist_hint"
-                android:fontFamily="sans-serif-light"
+                android:fontFamily="sans-serif-condensed-medium"
                 android:textColor="@color/black"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
@@ -82,7 +103,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/registhintTV"
                 android:text="@string/regist_hint2"
-                android:fontFamily="sans-serif-light"
+                android:fontFamily="sans-serif-condensed-medium"
                 android:textColor="@color/black"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="2dp"
@@ -100,15 +121,7 @@
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"/>
 
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:src="@drawable/tepat"
-                android:layout_below="@+id/registerhereBT"
-                android:scaleType="fitEnd"
-                android:layout_marginLeft="250dp"
-                android:layout_marginTop="20dp"
-                />
+
 
         </RelativeLayout>
     </RelativeLayout>

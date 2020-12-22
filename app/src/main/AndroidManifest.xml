@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.projectfinalefix">
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@drawable/logojpg"
         android:label="@string/app_name"
         android:roundIcon="@drawable/logojpg"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ProjectFinaleFix">
-        <activity android:name=".MutasiActivity"></activity>
-        <activity android:name=".BpjsActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.ProjectFinaleFix"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.MutasiActivity"></activity>
+        <activity android:name=".activity.BpjsActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

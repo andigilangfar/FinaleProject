@@ -1,4 +1,4 @@
-package com.example.projectfinalefix;
+package com.example.projectfinalefix.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.example.projectfinalefix.LoginActivity;
 import com.example.projectfinalefix.R;
 
 public class MainActivity extends AppCompatActivity {

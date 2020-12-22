@@ -5,25 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MutasiActivity">
+    tools:context=".activity.MutasiActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:orientation="horizontal"
+            android:background="@color/orangeheader"
+            android:layout_height="70dp">
+
 
             <ImageView
-                android:layout_marginTop="20dp"
                 android:layout_width="150dp"
-                android:layout_height="80dp"
-                android:src="@drawable/logobtpns"/>
+                android:layout_height="70dp"
+                android:src="@drawable/go2"/>
         </LinearLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="600dp"
-            android:layout_marginTop="150dp"
+            android:layout_marginTop="100dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp">
