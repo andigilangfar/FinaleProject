@@ -68,7 +68,7 @@
                 android:textColor="@color/black"
                 android:backgroundTint="@color/grey"
                 android:textColorHint="@color/grey"
-                android:inputType="numberPassword"
+                android:inputType="textPassword"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:layout_marginTop="20dp"
                 android:gravity="left"/>

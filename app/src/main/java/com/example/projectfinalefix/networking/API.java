@@ -1,6 +1,7 @@
 package com.example.projectfinalefix.networking;
 
 import com.example.projectfinalefix.model.APIResponse;
+import com.example.projectfinalefix.model.LoginRequest;
 import com.example.projectfinalefix.model.RegisterRequest;
 
 import retrofit2.Call;
@@ -12,7 +13,7 @@ public interface API {
     @POST("/register")
     Call<APIResponse> register (@Body RegisterRequest registerRequest);
 
-    @POST("/login")
+    @POST("/login/")
     Call<APIResponse> login (@Body LoginRequest loginRequest);
 
     @GET("/nasabah")

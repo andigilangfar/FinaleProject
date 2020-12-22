@@ -3,6 +3,7 @@ package com.example.projectfinalefix.repositories;
 import androidx.lifecycle.MutableLiveData;
 
 import com.example.projectfinalefix.model.APIResponse;
+import com.example.projectfinalefix.model.LoginRequest;
 import com.example.projectfinalefix.model.RegisterRequest;
 import com.example.projectfinalefix.networking.API;
 import com.example.projectfinalefix.networking.RetrofitService;
@@ -45,5 +46,21 @@ public class UserRepository {
             }
         });
         return response;
+    }
+
+    public MutableLiveData<APIResponse> postLogin(LoginRequest loginRequest){
+        MutableLiveData<APIResponse> loginResult = new MutableLiveData<>();
+        api.login(loginRequest).enqueue(new Callback<APIResponse>() {
+            @Override
+            public void onResponse(Call<APIResponse> call, Response<APIResponse> response) {
+                loginResult.setValue(response.body());
+            }
+
+            @Override
+            public void onFailure(Call<APIResponse> call, Throwable t) {
+                loginResult.setValue(null);
+            }
+        });
+        return loginResult;
     }
 }
