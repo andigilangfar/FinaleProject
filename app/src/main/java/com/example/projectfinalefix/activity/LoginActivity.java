@@ -54,6 +54,10 @@ public class LoginActivity extends AppCompatActivity {
         userViewModel.postLogin(loginRequest).observe(this,apiResponse ->{
             APIResponse response = apiResponse;
             if (response.getResponse() == 200) {
+                SharedPreferences sharedPreferences = getSharedPreferences("com.example.projectfinale.login", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putString("com.example.projectfinale.login", binding.loginusernameET.getText().toString());
+                editor.apply();
                 Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
                 startActivity(intent);
                 finish();

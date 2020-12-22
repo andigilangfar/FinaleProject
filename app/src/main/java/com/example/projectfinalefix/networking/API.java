@@ -8,6 +8,7 @@ import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
+import retrofit2.http.Path;
 
 public interface API {
     @POST("/register")
@@ -22,7 +23,7 @@ public interface API {
     @GET("/bpjs")
     Call<APIResponse> getBpjs();
 
-    @GET("/saldo")
-    Call<APIResponse> getSaldo();
+    @GET("/checksaldo/{username}")
+    Call<APIResponse> getSaldo(@Path("username")String checkSaldo);
 
 }

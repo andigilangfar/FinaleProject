@@ -63,4 +63,21 @@ public class UserRepository {
         });
         return loginResult;
     }
+
+    public MutableLiveData<APIResponse> getSaldo(String string){
+        MutableLiveData<APIResponse> saldoRequest = new MutableLiveData<>();
+        api.getSaldo(string).enqueue(new Callback<APIResponse>() {
+            @Override
+            public void onResponse(Call<APIResponse> call, Response<APIResponse> response) {
+                saldoRequest.setValue(response.body());
+                System.out.println("Testv");
+            }
+
+            @Override
+            public void onFailure(Call<APIResponse> call, Throwable t) {
+                saldoRequest.setValue(null);
+            }
+        });
+        return saldoRequest;
+    }
 }

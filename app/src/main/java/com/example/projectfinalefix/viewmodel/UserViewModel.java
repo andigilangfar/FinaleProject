@@ -32,4 +32,12 @@ public class UserViewModel extends ViewModel {
         mutableLiveData = userRepository.postLogin(loginRequest);
         return mutableLiveData;
     }
+
+    public LiveData<APIResponse> getSaldo(String string){
+        if (mutableLiveData == null){
+            userRepository = UserRepository.getInstance();
+        }
+        mutableLiveData = userRepository.getSaldo(string);
+        return mutableLiveData;
+    }
 }
