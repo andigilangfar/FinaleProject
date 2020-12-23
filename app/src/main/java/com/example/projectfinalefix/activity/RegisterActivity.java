@@ -43,12 +43,6 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void init(){
-        binding.registusernameET.setText("andi");
-        binding.registpasswordET.setText("gans");
-        binding.emailET.setText("andi@andi");
-        binding.addressET.setText("Green");
-        binding.fullnameET.setText("Andi Gilang");
-        binding.notelpET.setText("082210989800");
         userViewModel = ViewModelProviders.of(this).get(UserViewModel.class);
         userViewModel.init();
     }
@@ -56,10 +50,11 @@ public class RegisterActivity extends AppCompatActivity {
     private void doRegister(){
         String username =  binding.registpasswordET.getText().toString();
         String password =  binding.registpasswordET.getText().toString();
-        String email =  binding.emailET.getText().toString();
-        String alamat =  binding.addressET.getText().toString();
-        String no_telp =  binding.notelpET.getText().toString();
         String nama_lengkap = binding.fullnameET.getText().toString();
+        String alamat =  binding.addressET.getText().toString();
+        String email =  binding.emailET.getText().toString();
+        String no_telp =  binding.notelpET.getText().toString();
+
 
         if (password.equals("")){
             Toast.makeText(getApplicationContext(),"Password Harus Di Isi", Toast.LENGTH_SHORT).show();
@@ -70,6 +65,7 @@ public class RegisterActivity extends AppCompatActivity {
                 APIResponse response = nasabahResponse;
                 if (response.getResponse() == 200) {
                     moveToMessageActivity("Sukses", "Selamat Anda Berhasil Terdaftar", 200);
+                    Toast.makeText(getApplicationContext(), "Registrasi Berhasil", Toast.LENGTH_SHORT).show();
                 }
             });
             }
